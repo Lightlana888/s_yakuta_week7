@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Photographer</title>
+    <style>
+        body {
+
+
+
+
+            background-image: url(assets/images/loon-image-original.jpg);
+            background-size: 50%;
+
+        }
+
+        .container {
+            border: 5px solid #00adb5;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            width: 700px;
+            height: 100vh;
+            margin-left: 20px;
+            gap: 40px;
+            background-color: #1f2022;
+            opacity: 0.7;
+            color: #eeeeee;
+            font-family: 'Caladea', 'Josefin Sans', serif;
+
+        }
+
+        h1 {
+            text-align: left;
+            margin-bottom: 10px;
+            margin-left: 20px;
+        }
+
+        .contacts {
+            text-align: center;
+        }
+
+        .contact_info {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            height: 200px;
+            width: 95%;
+            border: none;
+        }
+
+        .input {
+            flex-grow: 1;
+            margin-bottom: 10px;
+            width: 600px;
+            background-color: #00adb5;
+
+        }
+
+        .radio-buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            align-self: center;
+            border: none;
+
+
+            height: auto;
+        }
+
+        .radio-buttons label {
+            display: flex;
+
+
+
+
+        }
+
+        .info {
+            display: grid;
+            grid-template-rows: 1fr;
+            align-items: center;
+            border: none;
+            justify-items: flex-start;
+            margin-left: 15px;
+            height: 100px;
+            margin-bottom: 0;
+            padding-bottom: 0;
+
+
+        }
+
+        .button {
+            padding: 20px 30px;
+            font-family: 'Caladea', serif;
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 18px;
+            margin: 0 auto;
+
+        }
+
+        .button:hover {
+            background-color: #00adb5;
+        }
+
+        .comment {
+            margin-left: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Let's schedule your call</h1>
+    <div class="container">
+
+        <fieldset class="contact_info">
+            <legend class="contacts">Contacts</legend>
+            <div>
+                <section><label for="name" class="form-label">Your first name</label><input type="text" id="name"
+                        placeholder="type your first name here" class="input"></section>
+                <section><label for="surname" class="form-label">Your last name</label><input type="text" id="surname"
+                        placeholder="type your last name here " class="input"></section>
+                <section><label for="phone" class="form-label">Your phone number</label><input type="tel" id="phone"
+                        placeholder="type your phone number here" class="input"></section>
+            </div>
+        </fieldset>
+        <div class="info">
+            <section class="time"><label for="time">Choose your comfortable time for call</label><select name="time"
+                    id="time/hours">
+                    <option value="1">Monday 9am</option>
+                    <option value="2">Monday 2pm</option>
+                    <option value="3">Tuesday 9am</option>
+                    <option value="4">Tuesday 2pm</option>
+                    <option value="5">Wednesday 11 am</option>
+                    <option value="6">Wednesday 4pm</option>
+                    <option value="7">Thursday 11 am</option>
+                    <option value="8">Thursday 4 pm</option>
+                    <option value="9">Friday 10 am</option>
+                    <option value="10">Friday 1 pm</option>
+                </select></section>
+        </div>
+        <fieldset class="radio-buttons">
+            <legend>I need photoshoot for:</legend>
+            <label><input type="radio" name="purpose" value="business" />Business</label>
+            <label><input type="radio" name="purpose" value="private" />Private</label>
+        </fieldset>
+        <section class="comment">Your comment:</section>
+        <textarea name="comment" id="com" rows="15" placeholder="type your comment here if needed"></textarea>
+
+        <div><button class="button">Schedule a call</button></div>
+    </div>
+</body>
+
+</html>

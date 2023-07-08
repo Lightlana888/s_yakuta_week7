@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 70% 30%;
+            grid-template-rows: 10% 3fr 20%;
+            height: 100vh;
+            width: 100vw;
+            text-align: center;
+            font-size: 1em;
+            font-weight: bolder;
+        }
+
+        .header {
+            display: grid;
+            align-items: center;
+            background: grey;
+            grid-column: 1/4;
+
+
+        }
+
+        .main {
+            background-color: rgba(253, 250, 74, 0.3);
+            display: grid;
+
+
+
+        }
+
+        .main_content {
+            border: 1px solid black;
+            display: grid;
+            height: 60%;
+            width: 95%;
+            grid-template-columns: 30% 30%;
+            grid-template-rows: 30% 30%;
+            justify-content: center;
+            gap: 30px;
+
+
+        }
+
+        .cell-1 {
+            display: grid;
+            grid-column: 1/2;
+            background-color: rgba(253, 250, 74, 0.5);
+            align-items: center;
+        }
+
+        .cell-2 {
+            display: grid;
+            grid-column: 2/4;
+            background-color: rgba(253, 250, 74, 0.5);
+            align-items: center;
+        }
+
+        .cell-3 {
+            display: grid;
+            background-color: rgba(253, 250, 74, 0.5);
+            align-items: center;
+            grid-column: 1/4;
+
+        }
+
+        .aside {
+            display: grid;
+            align-items: center;
+            background: rgb(193, 214, 161);
+
+        }
+
+        .footer {
+            border: 1px solid black;
+            display: grid;
+            grid-template-columns: repeat(4, 20%);
+            background: rgb(165, 165, 165);
+            grid-column: 1/4;
+            justify-content: space-between;
+            align-content: center;
+            align-items: center;
+        }
+
+        .item_footer {
+            display: grid;
+            align-items: center;
+
+            background: rgb(216, 216, 213);
+            height: 95%;
+            margin: 10% 5%;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">[Шапка страницы]</header>
+        <main class="main">
+            <h1>[Основная часть]</h1>
+            <section class="main_content">
+                <div class="cell-1">[Ещё 1]</div>
+                <div class="cell-2">[Ещё 2]</div>
+                <div class="cell-3">[Ещё 3]</div>
+            </section>
+        </main>
+        <aside class="aside">[Боковая часть]</aside>
+        <footer class="footer">
+            <section class="item_footer">[Секция футера 1]</section>
+            <section class="item_footer">[Секция футера 2]</section>
+            <section class="item_footer">[Секция футера 3]</section>
+            <section class="item_footer">[Секция футера 4]</section>
+        </footer>
+    </div>
+</body>
+
+</html>
